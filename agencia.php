@@ -6,9 +6,21 @@
  * Version: 0.1
  * Author: DevoWeb
  * Author URI: https://www.devoweb.fr
+ * Text Domain: agence
+ * Domain Path: /languages
  */
 
+
+defined('ABSPATH') or die('No script kiddies please!');
+
+add_action('plugins_loaded', function () {
+    load_plugin_textdomain('agence', false, basename(dirname(__FILE__)) . '/languages');
+});
+
 require_once('inc/media.php');
+require_once('inc/functions.php');
+require_once('inc/query.php');
+require_once('inc/rewrite.php');
 
 add_action('init', function () {
     register_post_type('property', [
@@ -41,10 +53,14 @@ add_action('init', function () {
         'menu_position' => 5,
         'supports' => ['title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'],
         'hierarchical' => true,
+        'rewrite' => [
+            'slug' => _x('property', 'URL', 'agence'),
+        ],
         'exclude_from_search' => false,
         'taxonomies' => ['property_type', 'property_city'],
         'show_in_rest' => true,
         "has_archive" => true,
+        'exclude_from_search' => true,
     ]);
 
     register_taxonomy('property_type', 'property', [
@@ -129,37 +145,3 @@ add_action('init', function () {
 
 register_activation_hook(__FILE__, 'flush_rewrite_rules');
 register_deactivation_hook(__FILE__, 'flush_rewrite_rules');
-
-/**
- * Show city and postal code associated to a property
- * @param WP_Post|int|null $post
- */
-function agencia_plugin_city($post = null): void
-{
-    if ($post === null) {
-        $post = get_post();
-    }
-    $cities = get_the_terms($post, 'property_city');
-    if (empty($cities)) {
-        return;
-    }
-    $city = $cities[0];
-    echo $city->name;
-    $postalCode = get_field('postal_code', $city);
-    if ($postalCode) {
-        echo ' (' . $postalCode . ')';
-    }
-}
-
-/**
- * Show price of a property
- * @param WP_Post|int|null $post
- */
-function agencia_plugin_price($post = null)
-{
-    if (get_field('property_category', $post) == 'buy') {
-        echo sprintf('%s $', get_field('price'));
-    } else {
-        echo sprintf('%s $/mo', get_field('price'));
-    }
-}

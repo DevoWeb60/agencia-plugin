@@ -1,4 +1,6 @@
 <?php
+defined('ABSPATH') or die('No script kiddies please!');
+
 
 add_filter('attachment_fields_to_edit', function ($fields, $post) {
     $property_selected = get_post_meta($post->ID, 'property-post-id', true);
@@ -8,7 +10,7 @@ add_filter('attachment_fields_to_edit', function ($fields, $post) {
         'name' => 'attachments[' . $post->ID . '][property-post-id]',
         'id' => 'attachments[' . $post->ID . '][property-post-id]',
         'echo' => 0,
-        'show_option_none' => __('Select a property')
+        'show_option_none' => __('Select a property'),
     ];
     // select fields for property images 
     $fields['property-post-id'] = [
@@ -22,13 +24,6 @@ add_filter('attachment_fields_to_edit', function ($fields, $post) {
 }, null, 2);
 
 add_action('attachment_fields_to_save', function ($post, $attachment) {
-    // echo '<pre>';
-    // print_r([
-    //     'post' => $post,
-    //     'attachment' => $attachment
-    // ]);
-    // echo '</pre>';
-    // die();
     wp_update_post([
         "ID" => $post['ID'],
         "post_parent" => $attachment['property-post-id'],

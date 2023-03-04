@@ -1,0 +1,327 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Agencia Plugin\n"
+"POT-Creation-Date: 2023-01-26 14:08+0100\n"
+"PO-Revision-Date: 2023-01-26 14:23+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_x:1,2c;_n\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: agencia.php:22 agencia.php:25
+msgid "Properties"
+msgstr "Biens"
+
+#: agencia.php:26 inc/media.php:17
+msgid "Property"
+msgstr "Bien"
+
+#: agencia.php:27
+msgid "Add property"
+msgstr "Ajouter un bien"
+
+#: agencia.php:28
+msgid "Edit property"
+msgstr "Modifier le bien"
+
+#: agencia.php:29
+msgid "New property"
+msgstr "Nouveau bien"
+
+#: agencia.php:30
+msgid "View property"
+msgstr "Voir le bien"
+
+#: agencia.php:31
+msgid "View properties"
+msgstr "Voir les biens"
+
+#: agencia.php:32
+msgid "Search properties"
+msgstr "Rechercher des biens"
+
+#: agencia.php:33
+msgid "Properties not found"
+msgstr "Bien non trouvé"
+
+#: agencia.php:34
+msgid "No property in trash"
+msgstr "Aucun bien dans la corbeille"
+
+#: agencia.php:35
+msgid "All properties"
+msgstr "Tout les biens"
+
+#: agencia.php:36
+msgid "Archived properties"
+msgstr "Biens archivés"
+
+#: agencia.php:37
+msgid "Properties filter list"
+msgstr "Liste de filtre des biens"
+
+#: agencia.php:38
+msgid "Properties navigation list"
+msgstr "Navigation des biens"
+
+#: agencia.php:39
+msgid "Properties list"
+msgstr "Liste des biens"
+
+#: agencia.php:40
+msgid "Property published"
+msgstr "Bien publié"
+
+#: agencia.php:41
+msgid "Private property published"
+msgstr "Bien privé publié"
+
+#: agencia.php:42
+msgid "Property reverted to draft"
+msgstr "Bien mis en brouillon"
+
+#: agencia.php:43
+msgid "Property scheduled"
+msgstr "Calendrier du bien"
+
+#: agencia.php:44
+msgid "Property updated"
+msgstr "Bien mis à jour"
+
+#: agencia.php:46
+msgid "Estate properties"
+msgstr "Biens"
+
+#: agencia.php:52 inc/query.php:34
+msgctxt "URL"
+msgid "property"
+msgstr "biens"
+
+#: agencia.php:61 agencia.php:63
+msgid "Types"
+msgstr "Types"
+
+#: agencia.php:64
+msgid "Property type"
+msgstr "Type de bien"
+
+#: agencia.php:65
+msgid "Search property types"
+msgstr "Recherche de type de bien"
+
+#: agencia.php:66
+msgid "Popular property types"
+msgstr "Type de bien populaire"
+
+#: agencia.php:67
+msgid "All property types"
+msgstr "Tout les types de biens"
+
+#: agencia.php:68
+msgid "Edit property type"
+msgstr "Modifier le type de bien"
+
+#: agencia.php:69
+msgid "Update property type"
+msgstr "Mettre à jour le type de bien"
+
+#: agencia.php:70
+msgid "Add new property type"
+msgstr "Ajouter un nouveau type de bien"
+
+#: agencia.php:71
+msgid "New property type"
+msgstr "Nouveau type de bien"
+
+#: agencia.php:72
+msgid "Separate property types with commas"
+msgstr ""
+
+#: agencia.php:73
+msgid "Add or remove property types"
+msgstr "Ajouter ou enlever le type de bien"
+
+#: agencia.php:74
+msgid "Choose from the most used property types"
+msgstr "Choisir depuis les types de bien les plus utilisés"
+
+#: agencia.php:75
+msgid "No property type found"
+msgstr "Type de bien non trouvé"
+
+#: agencia.php:76
+msgid "No property type"
+msgstr "Aucun type de bien"
+
+#: agencia.php:77
+msgid "Property types navigation list"
+msgstr "Navigation de type de bien"
+
+#: agencia.php:78
+msgid "Property types list"
+msgstr "Liste de type de bien"
+
+#: agencia.php:80
+msgid "Property types"
+msgstr "Type du bien"
+
+#: agencia.php:87 agencia.php:89
+msgid "Cities"
+msgstr "Villes"
+
+#: agencia.php:90
+msgid "city"
+msgstr "ville"
+
+#: agencia.php:91
+msgid "Search cities"
+msgstr "Rechercher les villes"
+
+#: agencia.php:92
+msgid "Popular cities"
+msgstr "Villes populaire"
+
+#: agencia.php:93
+msgid "All cities"
+msgstr "Toute les villes"
+
+#: agencia.php:94
+msgid "Edit city"
+msgstr "Modifier la ville"
+
+#: agencia.php:95
+msgid "Update city"
+msgstr "Mettre à jour la ville"
+
+#: agencia.php:96
+msgid "Add new city"
+msgstr "Ajouter une nouvelle ville"
+
+#: agencia.php:97
+msgid "New city"
+msgstr "Nouvelle ville"
+
+#: agencia.php:98
+msgid "Separate cities with commas"
+msgstr ""
+
+#: agencia.php:99
+msgid "Add or remove cities"
+msgstr "Ajouter ou enlever les villes"
+
+#: agencia.php:100
+msgid "Choose from the most used cities"
+msgstr ""
+
+#: agencia.php:101
+msgid "No city found"
+msgstr "Aucune ville trouvée"
+
+#: agencia.php:102
+msgid "No city"
+msgstr "Aucune ville"
+
+#: agencia.php:103
+msgid "Cities navigation list"
+msgstr "Navigation de villes"
+
+#: agencia.php:104
+msgid "Cities list"
+msgstr "Listes des villes"
+
+#: agencia.php:106
+msgid "Cities for properties"
+msgstr "Villes du bien"
+
+#: agencia.php:113 agencia.php:115
+msgid "Options"
+msgstr "Options"
+
+#: agencia.php:116
+msgid "option"
+msgstr "option"
+
+#: agencia.php:117
+msgid "Search Options"
+msgstr "Recherche les options"
+
+#: agencia.php:118
+msgid "Popular Options"
+msgstr "Options populaires"
+
+#: agencia.php:119
+msgid "All Options"
+msgstr "Toute les options"
+
+#: agencia.php:120
+msgid "Edit option"
+msgstr "Modifier l'option"
+
+#: agencia.php:121
+msgid "Update option"
+msgstr "Mettre à jour l'option"
+
+#: agencia.php:122
+msgid "Add new option"
+msgstr "Ajouter une nouvelle option"
+
+#: agencia.php:123
+msgid "New option"
+msgstr "Nouvelle option"
+
+#: agencia.php:124
+msgid "Separate Options with commas"
+msgstr ""
+
+#: agencia.php:125
+msgid "Add or remove Options"
+msgstr "Ajouter ou enlever les options"
+
+#: agencia.php:126
+msgid "Choose from the most used Options"
+msgstr "Choisir parmi les options les plus utilisées"
+
+#: agencia.php:127
+msgid "No option found"
+msgstr "Aucune option trouvéé"
+
+#: agencia.php:128
+msgid "No option"
+msgstr "Aucune option"
+
+#: agencia.php:129
+msgid "Options navigation list"
+msgstr "Navigation des options"
+
+#: agencia.php:130
+msgid "Options list"
+msgstr "Listes des options"
+
+#: agencia.php:132
+msgid "Options for properties"
+msgstr "Options du bien"
+
+#: inc/media.php:13
+msgid "Select a property"
+msgstr "Choisir un bien"
+
+#: inc/media.php:21
+msgid "This image is linked to this property"
+msgstr "Cette image sera lié à l'article."
+
+#: inc/query.php:6
+msgctxt "URL"
+msgid "buy"
+msgstr "acheter"
+
+#: inc/query.php:7
+msgctxt "URL"
+msgid "rent"
+msgstr "louer"
